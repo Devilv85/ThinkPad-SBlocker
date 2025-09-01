@@ -3,12 +3,16 @@ package com.vishal2376.scrollblock.presentation.home.components
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.Chat
 import androidx.compose.material.icons.filled.BugReport
+import androidx.compose.material.icons.filled.Analytics
+import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.filled.Share
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.ui.graphics.vector.ImageVector
 import com.vishal2376.scrollblock.R
 
 enum class NavDrawerItem(val stringId: Int, val icon: ImageVector) {
+    ANALYTICS(R.string.analytics, Icons.Default.Analytics),
+    ADVANCED_SETTINGS(R.string.advanced_settings, Icons.Default.Settings),
 	REPORT_BUGS(R.string.report_bugs, Icons.Default.BugReport), SUGGESTIONS(
 		R.string.suggestions,
 		Icons.AutoMirrored.Filled.Chat

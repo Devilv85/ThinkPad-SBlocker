@@ -10,6 +10,7 @@ import com.vishal2376.scrollblock.data.local.MainRepository
 import com.vishal2376.scrollblock.presentation.home.components.NavDrawerItem
 import com.vishal2376.scrollblock.presentation.main.MainEvent
 import com.vishal2376.scrollblock.presentation.main.MainState
+import com.vishal2376.scrollblock.presentation.navigation.Screen
 import com.vishal2376.scrollblock.utils.Constants
 import com.vishal2376.scrollblock.utils.SettingsStore
 import com.vishal2376.scrollblock.utils.openMail
@@ -34,6 +35,14 @@ class MainViewModel @Inject constructor(
 		when (event) {
 			is MainEvent.OnClickNavDrawerItem -> {
 				when (event.item) {
+					NavDrawerItem.ANALYTICS -> {
+						// Navigation will be handled by the UI layer
+					}
+					
+					NavDrawerItem.ADVANCED_SETTINGS -> {
+						// Navigation will be handled by the UI layer
+					}
+					
 					NavDrawerItem.REPORT_BUGS -> {
 						openMail(event.context, event.context.getString(R.string.report_bugs))
 					}
@@ -50,6 +59,10 @@ class MainViewModel @Inject constructor(
 						shareApp(event.context)
 					}
 				}
+			}
+			
+			is MainEvent.OnNavigateToScreen -> {
+				// Handle navigation events
 			}
 
 			is MainEvent.OnToggleInstagram -> {

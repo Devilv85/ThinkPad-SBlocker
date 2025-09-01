@@ -12,4 +12,8 @@
     <string name="source_code">Source Code</string>
     <string name="tag_line">Regain Control with Scroll Block. Download now</string>
     <string name="buildVersion">v%1$s</string>
+    <string name="enhanced_service_name">Scroll Block Enhanced</string>
+    <string name="enhanced_service_description">Advanced doom scrolling detection with smart content analysis</string>
+    <string name="analytics">Analytics</string>
+    <string name="advanced_settings">Advanced Settings</string>
 </resources>

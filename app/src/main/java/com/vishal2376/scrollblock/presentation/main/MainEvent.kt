@@ -9,4 +9,5 @@ sealed class MainEvent {
 	data class OnToggleLinkedin(val isEnabled: Boolean) : MainEvent()
 	data class OnToggleSnapchat(val isEnabled: Boolean) : MainEvent()
 	data class OnClickNavDrawerItem(val context: Context, val item: NavDrawerItem) : MainEvent()
+    data class OnNavigateToScreen(val screen: String) : MainEvent()
 }
